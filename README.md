@@ -14,7 +14,9 @@ This is a simple example how to use a shared data object as normal php object wi
 ```php
 <?php
 
-require_once __DIR__ . DIRECTORY_SEPARATOR . "Thread.php";
+require_once 'vendor/autoloader.php';
+
+use AppserverIo\Fhreads\Thread;
 
 // define counter thread class which counts the shared data objects counter property
 class CounterThread extends Thread
