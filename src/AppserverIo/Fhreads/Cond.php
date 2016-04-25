@@ -18,6 +18,8 @@
 
 namespace AppserverIo\Fhreads;
 
+use AppserverIo\Psr\Concurrency\ConditionInterface;
+
 /**
  * Condition object implementation
  *
@@ -27,7 +29,7 @@ namespace AppserverIo\Fhreads;
  * @link      https://github.com/appserver-io/fhreads
  * @link      http://www.appserver.io
  */
-class Cond
+class Cond implements ConditionInterface
 {
     /**
      * Broadcast to all Threads blocking on a call to Cond::wait().

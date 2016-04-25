@@ -18,6 +18,8 @@
 
 namespace AppserverIo\Fhreads;
 
+use AppserverIo\Psr\Concurrency\MutexInterface;
+
 /**
  * Mutex object implementation
  *
@@ -27,7 +29,7 @@ namespace AppserverIo\Fhreads;
  * @link      https://github.com/appserver-io/fhreads
  * @link      http://www.appserver.io
  */
-class Mutex
+class Mutex implements MutexInterface
 {
     /**
      * Create, and optionally lock a new Mutex for the caller
