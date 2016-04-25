@@ -1,0 +1,37 @@
+{
+	"name" : "appserver-io/fhreads",
+	"description" : "A PHP Userland threading library based on fhreads php extension",
+	"homepage" : "https://github.com/appserver-io/fhreads",
+	"license" : "OSL-3.0",
+	"authors" : [{
+			"name" : "Johann Zelger",
+			"email" : "jz@appserver.io",
+			"homepage" : "https://github.com/zelgerj",
+			"role" : "Developer"
+		}
+	],
+	"require" : {
+		"php" : ">=7.0.0",
+		"ext-fhreads": "*",
+		"appserver-io-psr/concurrent" : "~1.0"
+	},
+	"require-dev" : {
+		"appserver-io/build" : "~1.0"
+	},
+	"autoload" : {
+		"psr-0" : {
+			"AppserverIo\\Fhreads" : [
+				"src/",
+				"tests/"
+			]
+		}
+	},
+	"support" : {
+		"email" : "jz@appserver.io",
+		"issues" : "https://github.com/appserver-io/fhreads/issues",
+		"source" : "https://github.com/appserver-io/fhreads"
+	},
+	"keywords" : [
+		"fhreads php threading pthreads multithreading"
+	]
+}
