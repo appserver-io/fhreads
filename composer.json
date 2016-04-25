@@ -13,7 +13,7 @@
 	"require" : {
 		"php" : ">=7.0.0",
 		"ext-fhreads": "*",
-		"appserver-io-psr/concurrent" : "~1.0"
+		"appserver-io-psr/concurrency" : "~1.0"
 	},
 	"require-dev" : {
 		"appserver-io/build" : "~1.0"
