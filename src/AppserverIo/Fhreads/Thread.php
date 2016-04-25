@@ -18,26 +18,12 @@
 
 namespace AppserverIo\Fhreads;
 
-/**
- * Interface Runnable
- *
- * Simple interface for runnables
- *
- * @author    Johann Zelger <zelger@me.com>
- * @copyright 2016 TechDivision GmbH <info@appserver.io>
- * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
- * @link      https://github.com/appserver-io/fhreads
- * @link      http://www.appserver.io
- */
-interface Runnable
-{
-    public function run();
-}
+use AppserverIo\Psr\Concurrency\ThreadInterface;
 
 /**
  * Abstract Class Thread
  *
- * Simple thread abstract class which implements runnable interface
+ * Simple thread abstract class which implements thread as well as runnable interface
  *
  * @author    Johann Zelger <zelger@me.com>
  * @copyright 2016 TechDivision GmbH <info@appserver.io>
@@ -45,7 +31,7 @@ interface Runnable
  * @link      https://github.com/appserver-io/fhreads
  * @link      http://www.appserver.io
  */
-abstract class Thread implements Runnable
+abstract class Thread implements ThreadInterface
 {
     /**
      * Defines thread states

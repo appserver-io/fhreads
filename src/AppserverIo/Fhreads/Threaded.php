@@ -18,6 +18,8 @@
 
 namespace AppserverIo\Fhreads;
 
+use AppserverIo\Psr\Concurrency\ThreadedInterface;
+
 /**
  * Threaded object implementation
  *
@@ -27,7 +29,7 @@ namespace AppserverIo\Fhreads;
  * @link      https://github.com/appserver-io/fhreads
  * @link      http://www.appserver.io
  */
-class Threaded implements \ArrayAccess, \Countable
+class Threaded implements ThreadedInterface
 {
     
     /**
