@@ -1,5 +1,9 @@
 <?php
 
+require __DIR__ . "/../vendor/autoload.php";
+
+use AppserverIo\Fhreads\Thread;
+
 // define counter thread class which counts the shared data objects counter property
 class CounterThread extends Thread
 {
