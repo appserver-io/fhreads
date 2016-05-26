@@ -1,5 +1,9 @@
 <?php
 
+require __DIR__ . "/../vendor/autoload.php";
+
+use AppserverIo\Fhreads\Thread;
+
 class DummyThread extends Thread
 {
     public function run()

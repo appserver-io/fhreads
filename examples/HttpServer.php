@@ -1,5 +1,9 @@
 <?php
 
+require __DIR__ . "/../vendor/autoload.php";
+
+use AppserverIo\Fhreads\Thread;
+
 class ThreadWorker extends \Thread
 {
     public function __construct($server)

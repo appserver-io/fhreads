@@ -4,6 +4,10 @@
 * In this example, you will see how to make a process and thread synchronize with each other
 */
 
+require __DIR__ . "/../vendor/autoload.php";
+
+use AppserverIo\Fhreads\Thread;
+
 /* this is just so reading the logic makes sense */
 function do_some_work($m) { usleep($m); }
 
